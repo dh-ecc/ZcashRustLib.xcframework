@@ -6,6 +6,7 @@
 //  Copyright © 2019 Electric Coin Company. All rights reserved.
 //
 
+#if os(iOS)
 import Foundation
 import UIKit
 
@@ -934,3 +935,4 @@ private struct NullEnhancementProgress: EnhancementProgress {
     var lastFoundTransaction: ConfirmedTransactionEntity? { nil }
     var range: CompactBlockRange { 0 ... 0 }
 }
+#endif

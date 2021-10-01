@@ -5,6 +5,7 @@ let package = Package(
     name: "ZcashLightClientKit",
     platforms: [
         .iOS(.v13),
+        .macOS(.v10_12)
     ],
     products: [
         .library(

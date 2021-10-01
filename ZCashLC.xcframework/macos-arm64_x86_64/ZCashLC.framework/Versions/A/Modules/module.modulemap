@@ -1,0 +1,6 @@
+framework module ZCashLC {
+  umbrella header "libzcashlc.h"
+
+  export *
+  module * { export * }
+}
