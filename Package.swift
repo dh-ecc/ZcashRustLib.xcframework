@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "ZcashLightClientKit",
-            targets: ["ZcashLightClientKit","ZCashLC"]
+            targets: ["ZcashLightClientKit"]
         ),
     ],
     dependencies: [
@@ -21,6 +21,7 @@ let package = Package(
         .target(name: "ZcashLightClientKit", dependencies: [
             .product(name: "SQLite", package: "SQLite.swift"),
             .product(name: "GRPC", package: "grpc-swift"),
+            .target(name: "ZCashLC")
         ]),
         .binaryTarget(name: "ZCashLC", path: "ZCashLC.xcframework")
     ]
